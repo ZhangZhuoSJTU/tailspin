@@ -1,6 +1,6 @@
 # Course-side exclusions: tests that are environment-sensitive outside the
 # benchmark containers. Format: <branch>/<classname>.<testname>
-#
+
 # On macOS /tmp is a symlink to /private/tmp. tailspin canonicalizes a "/tmp/..."
 # argument to "/private/tmp/..." but then mishandles the result (it feeds
 # linemux a path that has lost its leading slash, e.g. joined onto the cwd), so
